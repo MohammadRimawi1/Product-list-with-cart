@@ -48,92 +48,82 @@ body {
 }
 
 /* -------- GROCERIES DESING -------- */
-.groceries {
-    .page-title {
-        font-size: var(--page-title-fs);
-        color: var(--Rose-900);
-        margin-bottom: 2.5rem;
-    }
-
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        max-width: 50rem;
-
-        .card {
-
-            .image-content {
-                position: relative;
-                margin-bottom: 2rem;
-
-                .card-image {
-                    width: 15rem;
-                    border-radius: 5px;
-                }
-
-                .add {
-                    display: flex;
-                    align-items: center;
-                    gap: 0.5rem;
-                    position: absolute;
-                    top: 90%;
-                    left: 2.6rem;
-                    background: var(--white);
-                    padding: 0.5rem 1rem;
-                    border: 1px solid var(--Rose-300);
-                    border-radius: 20px;
-                    cursor: pointer;
-
-                    &:hover {
-                        color: var(--Red);
-                        border: 1px solid var(--Red);
-                    }
-
-                    .cart-icon {
-                        width: 1.5rem;
-                    }
-
-                    .add-to-cart {
-                        font-weight: 500;
-                    }
-                }
-            }
-
-            .food {
-                
-
-                .type {
-                    color: var(--Rose-300);
-                    font-size: var(--food-type-fs);
-                    font-weight: 500;
-                    margin-bottom: 2px;
-                }
-                
-                .food-summary {
-                    color: var(--Rose-900);
-                    font-weight: 600;
-                    margin-bottom: 2px;
-                }
-
-                .cost {
-                    color: var(--Red);
-                    font-weight: 500;
-                }
-            }
-        }
-    
-    }
-
+.page-title {
+    font-size: var(--page-title-fs);
+    color: var(--Rose-900);
+    margin-bottom: 2.5rem;
 }
 
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 50rem;
+}
+
+.image-content {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.card-image {
+    width: 15rem;
+    border-radius: 5px;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    top: 90%;
+    left: 2.6rem;
+    background: var(--white);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--Rose-300);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add:hover {
+    color: var(--Red);
+    border: 1px solid var(--Red);
+}
+
+.cart-icon {
+    width: 1.5rem;
+}
+
+.add-to-cart {
+    font-weight: 500;
+}
+
+.type {
+    color: var(--Rose-300);
+    font-size: var(--food-type-fs);
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.food-summary {
+    color: var(--Rose-900);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.cost {
+    color: var(--Red);
+    font-weight: 500;
+}
+
+/* -------- CART DESIGN -------- */
 .cart {
     background: var(--white);
     padding: 1rem 1.5rem;
     height: 18rem;
     width: 22rem;
     border-radius: 5px;
-    
+
     .added-items {
         display: flex;
         flex-direction: column;
@@ -159,5 +149,30 @@ body {
 }
 
 /* -------- CONNECTED WITH JS -------- */
+.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 90%;
+    left: 22%;
+    background: var(--Red);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--Red);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 8.5rem;
 
+}
+
+.add.active .counter-number {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.add.active img.increment-decrement {
+    width: 1rem;
+    cursor: pointer;
+}
 
