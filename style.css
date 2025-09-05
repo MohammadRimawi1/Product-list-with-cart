@@ -118,34 +118,35 @@ body {
 
 /* -------- CART DESIGN -------- */
 .cart {
-    background: var(--white);
+    background: var(--Rose-50);
     padding: 1rem 1.5rem;
     height: 18rem;
     width: 22rem;
     border-radius: 5px;
 
-    .added-items {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+}
 
-    .your-cart {
-        color: var(--Red);
-        font-size: var(--your-cart-fs);
-        font-weight: 600;
-        margin-bottom: 2rem;
-    }
+.added-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
 
-    .cart-image {
-        width: 8rem;
-    }
+.your-cart {
+    color: var(--Red);
+    font-size: var(--your-cart-fs);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
 
-    .your-added-items {
-        color: var(--Rose-900);
-        font-weight: 500;
-    }
+.cart-image {
+    width: 8rem;
+}
+
+.your-added-items {
+    color: var(--Rose-900);
+    font-weight: 500;
 }
 
 /* -------- CONNECTED WITH JS -------- */
