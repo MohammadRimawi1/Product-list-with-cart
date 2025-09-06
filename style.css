@@ -6,6 +6,7 @@
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     --Red: hsl(14, 86%, 42%);
+    --Red-hover: hsl(14, 85%, 32%);
     --Green: hsl(159, 69%, 38%);
     --Rose-50: hsl(20, 50%, 98%);
     --Rose-100: hsl(13, 31%, 94%);
@@ -120,10 +121,10 @@ body {
 .cart {
     background: var(--Rose-50);
     padding: 1rem 1.5rem;
-    height: 18rem;
+    min-height: 18rem;
+    height: 100%;
     width: 22rem;
     border-radius: 5px;
-
 }
 
 .added-items {
@@ -163,7 +164,10 @@ body {
     border-radius: 20px;
     cursor: pointer;
     width: 8.5rem;
+}
 
+.selected .card-image {
+    border: 2px solid var(--Red);
 }
 
 .add.active .counter-number {
@@ -175,5 +179,121 @@ body {
 .add.active img.increment-decrement {
     width: 1rem;
     cursor: pointer;
+}
+
+.added-items.on {
+    align-items: start;
+}
+
+.cart-flexing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-item .food-summary-text {
+    color: var(--Rose-900);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.cart-item .counter-number {
+    color: var(--Red);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.cart-item .unit-price,
+.cart-item .total-price {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.cart-item .unit-price {
+    color: var(--Rose-300);
+    margin-right: 2px;
+}
+
+.cart-item .total-price {
+    color: var(--Rose-400);
+}
+
+.cart-item .remove-logo {
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.cart-item .cutter {
+    border-top: 1px solid var(--Rose-100);
+    margin-top: 0.8rem;
+    width: 20rem;
+}
+
+.final-price {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-total {
+    color: var(--Rose-900);
+}
+
+.total-sum {
+    color: var(--Rose-900);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 1.5rem 0;
+    background: var(--Rose-100);
+    padding: 0.6rem 1rem;
+}
+
+.neutral-logo {
+    width: 1.3rem;
+}
+
+.company-explain {
+    color: var(--Rose-900);
+}
+
+.company-explain span {
+    font-weight: 600;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.cart .confirm-btn {
+    color: var(--white);
+    background: var(--Red);
+    font-weight: 500;
+    padding: 0.5rem 4rem;
+    border: 1px solid var(--Red);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background: var(--Red-hover);
+    border: 1px solid var(--Red-hover);
 }
 
