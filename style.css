@@ -197,32 +197,32 @@ body {
     gap: 0.5rem;
 }
 
-.cart-item .food-summary-text {
+.food-summary-text {
     color: var(--Rose-900);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
 }
 
-.cart-item .counter-number {
+.counter-number {
     color: var(--Red);
     font-size: 0.9rem;
     font-weight: 600;
     margin-right: 1rem;
 }
 
-.cart-item .unit-price,
-.cart-item .total-price {
+.unit-price,
+.total-price {
     font-size: 0.9rem;
     font-weight: 600;
 }
 
-.cart-item .unit-price {
+.unit-price {
     color: var(--Rose-300);
     margin-right: 2px;
 }
 
-.cart-item .total-price {
+.total-price {
     color: var(--Rose-400);
 }
 
@@ -232,7 +232,7 @@ body {
     margin-right: 1rem;
 }
 
-.cart-item .cutter {
+.cutter {
     border-top: 1px solid var(--Rose-100);
     margin-top: 0.8rem;
     width: 20rem;
@@ -297,3 +297,104 @@ body {
     border: 1px solid var(--Red-hover);
 }
 
+/* CONFIRMED SECTION */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; 
+}
+
+.confirmed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    z-index: 101;
+}
+
+.img-confirmed {
+    width: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+.ordered-confirmed {
+    color: var(--Rose-900);
+}
+
+.confirmed-paragraph {
+    color: var(--Rose-300);
+    margin-bottom: 2.5rem;
+}
+
+.confirmed-content {
+    background: var(--Rose-100);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.cart-content-confiremd {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.confirmed-img {
+    width: 3rem;
+    border-radius: 5px;
+}
+
+.confirmed-content .cart-flexing {
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmed-cart-flexing {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.confirmed-content .cutter {
+    border-top: 1px solid var(--Rose-300);
+    margin: 0.5rem 0;
+}
+
+.confirmed .btn {
+    margin-top: 1rem;
+}
+
+.startnew-btn {
+    color: var(--white);
+    background: var(--Red);
+    padding: 0.5rem 4rem;
+    border: 0.5px solid var(--Red);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* -------- MEDIA QUERIES -------- */
+
+@media (max-width: 770px) {
+    html {
+        font-size: 58%;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 2rem 0 2rem;
+        align-items: center;
+    }
+}
